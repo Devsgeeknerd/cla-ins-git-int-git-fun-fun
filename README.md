@@ -1,13 +1,16 @@
 <!-- Título -->
 # Instalando o Git
 
-Este guia ensinará como instalar o Git, uma ferramenta importante para desenvolvedores, de forma simples e clara. Vamos aprender como fazer isso em diferentes computadores, usando exemplos fáceis de entender.
+Este guia ensinará como instalar o Git, uma ferramenta importante para desenvolvedores, de forma simples e clara.
+
+Vamos aprender como fazer isso em diferentes computadores, usando exemplos fáceis de entender.
 
 ***Conteúdo da Aula:***
 
 ## O que é Git?
 
 Imagine que você está escrevendo um livro.
+
 O Git é como ter um caderno mágico que:
 
 * Guarda todas as suas alterações.
@@ -48,6 +51,7 @@ O processo de instalação é simples, porém diferente entre os três sistemas 
 ## Instalação no Windows
 
 Baixe o instalador Git para Windows em:
+
 [Git for Windows](https://git-scm.com/download/win).
 
 Na página, escolha o instalador compatível com a arquitetura do seu sistema(x86, x86 ou ARM) e faça o download.
@@ -132,6 +136,7 @@ brew install git
 ```
 
 Se o Xcode Command Line Tools estiver instalado, pode já haver uma versão do Git disponível (mantida pela Apple), porém pode estar desatualizada.
+
 Para instalar/atualizar as tools:
 
 ```bash
@@ -164,10 +169,10 @@ git config --global user.email "seuemail@example.com"
 Outras configurações úteis:
 
 ```bash
-# Define editor padrão (ex.: VS Code)
+# Define editor padrão (ex.: VS Code).
 git config --global core.editor "code --wait"
 
-# Lista todas as configurações
+# Lista todas as configurações.
 git config --list
 
 ```
@@ -177,17 +182,17 @@ git config --list
 Você pode rodar este script simples (bash) para verificar instalações e configurações básicas:
 
 ```bash
-# Verifica versão
+# Verifica versão.
 git --version
 
-# Verifica configurações essenciais
+# Verifica configurações essenciais.
 git config --global user.name || echo "user.name não configurado"
 git config --global user.email || echo "user.email não configurado"
 
-# Localiza o executável
+# Localiza o executável.
 which git || command -v git
 
-# Verifica configuração do editor
+# Verifica configuração do editor.
 git config --global core.editor || echo "core.editor não configurado"
 ```
 
